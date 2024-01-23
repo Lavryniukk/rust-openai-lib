@@ -6,7 +6,7 @@ description = "A Rust library for OpenAI API integration"
 license = "MIT"
 repository = "https://github.com/lavryniukk/rust-openai-lib"
 homepage = "https://github.com/lavryniukk/rust-openai-lib"
-authors = ["Your Name <leoyt109@gmail.com>"]
+authors = ["Lavryniuk Lev <leoyt109@gmail.com>"]
 keywords = ["rust", "openai", "library"]
 
 [dependencies]
@@ -16,3 +16,7 @@ tokio = { version = "1.0", features = ["full"] }
 serde_json = "1.0"
 
 [dev-dependencies]
+
+[package.metadata.docs.rs]
+features = ["default"]
+categories = ["library", "rust", "openai"]
