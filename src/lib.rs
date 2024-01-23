@@ -69,7 +69,7 @@ impl Openai {
     ///
     /// # Returns
     ///
-    /// A `Result` containing the response from the API or an error.
+    /// A `Result` containing the json'ed response from the API or an error.
     ///
     /// # Example
     ///
