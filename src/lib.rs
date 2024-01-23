@@ -1,4 +1,4 @@
-use reqwest::{Error, Response};
+use reqwest::Error;
 use serde_json::Value;
 
 /// Represents the available models for the OpenAI instance.
