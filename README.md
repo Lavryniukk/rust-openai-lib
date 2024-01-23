@@ -26,8 +26,8 @@ let openai = Openai::new("your-api-key", Model::Gpt35Turbo);
 let openai = Openai::new("your-api-key", Model::Gpt35Turbo);
 ```
 
-| Parameter |  Type  |     Description     |
-| :-------: | :----: | :-----------------: |
+| Parameter |   Type   |     Description     |
+| :-------: | :------: | :-----------------: |
 |  api_key  | `String` | Your OpenAI API key |
 |   model   | `Model`  |  The model to use   |
 
@@ -43,8 +43,10 @@ let messages = vec![Message {
 let response = openai.get_chat_completion(messages).await.unwrap();
 ```
 
-| Parameter |     Type     |               Description                |
-| :-------: | :----------: | :--------------------------------------: |
+| Parameter |      Type      |               Description                |
+| :-------: | :------------: | :--------------------------------------: |
 | messages  | `Vec<Message>` | List of messages for the chat completion |
 
 Returns: `Result<Value, Error>`
+
+Where `Value` is response object.
